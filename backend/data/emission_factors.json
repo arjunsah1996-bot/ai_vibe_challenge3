@@ -1,0 +1,398 @@
+{
+  "metadata": {
+    "version": "v1",
+    "effective_from": "2025-01-01",
+    "primary_region": "india",
+    "grid_factor_source": "CEA CO2 Baseline Database v21.0 (Nov 2025) — 0.736 tCO2/MWh",
+    "last_updated": "2025-11-15"
+  },
+  "factors": [
+    {
+      "category": "household_energy",
+      "activity_type": "electricity",
+      "region": "india",
+      "unit": "kWh",
+      "kg_co2e_per_unit": 0.736,
+      "source": "CEA CO2 Baseline Database v21.0, 2025 vintage, Combined Margin",
+      "default_quantity": 5.0
+    },
+    {
+      "category": "household_energy",
+      "activity_type": "lpg_cylinder",
+      "region": "india",
+      "unit": "cylinder",
+      "kg_co2e_per_unit": 42.5,
+      "source": "India GHG Program — 14.2 kg domestic cylinder, 2.98 kg CO2/kg LPG",
+      "default_quantity": 1.0
+    },
+    {
+      "category": "household_energy",
+      "activity_type": "png_piped_gas",
+      "region": "india",
+      "unit": "scm",
+      "kg_co2e_per_unit": 1.96,
+      "source": "India GHG Program — piped natural gas, 1.96 kg CO2/SCM",
+      "default_quantity": 2.0
+    },
+    {
+      "category": "household_energy",
+      "activity_type": "ac_usage",
+      "region": "india",
+      "unit": "hours",
+      "kg_co2e_per_unit": 1.104,
+      "source": "Derived: 1.5 kW avg draw × 0.736 kg/kWh (CEA v21.0)",
+      "default_quantity": 4.0
+    },
+    {
+      "category": "household_energy",
+      "activity_type": "geyser_water_heater",
+      "region": "india",
+      "unit": "hours",
+      "kg_co2e_per_unit": 1.472,
+      "source": "Derived: 2.0 kW avg draw × 0.736 kg/kWh (CEA v21.0)",
+      "default_quantity": 0.5
+    },
+    {
+      "category": "household_energy",
+      "activity_type": "refrigerator",
+      "region": "india",
+      "unit": "hours",
+      "kg_co2e_per_unit": 0.11,
+      "source": "Derived: 0.15 kW avg draw × 0.736 kg/kWh (CEA v21.0)",
+      "default_quantity": 24.0
+    },
+    {
+      "category": "household_energy",
+      "activity_type": "washing_machine",
+      "region": "india",
+      "unit": "cycle",
+      "kg_co2e_per_unit": 0.736,
+      "source": "Derived: 1 kWh per wash cycle × 0.736 kg/kWh (CEA v21.0)",
+      "default_quantity": 1.0
+    },
+    {
+      "category": "household_energy",
+      "activity_type": "ceiling_fan",
+      "region": "india",
+      "unit": "hours",
+      "kg_co2e_per_unit": 0.055,
+      "source": "Derived: 0.075 kW avg draw × 0.736 kg/kWh (CEA v21.0)",
+      "default_quantity": 8.0
+    },
+    {
+      "category": "household_energy",
+      "activity_type": "lighting_led",
+      "region": "india",
+      "unit": "hours",
+      "kg_co2e_per_unit": 0.0074,
+      "source": "Derived: 0.01 kW (10W LED) × 0.736 kg/kWh (CEA v21.0)",
+      "default_quantity": 6.0
+    },
+    {
+      "category": "household_energy",
+      "activity_type": "lighting_cfl",
+      "region": "india",
+      "unit": "hours",
+      "kg_co2e_per_unit": 0.015,
+      "source": "Derived: 0.02 kW (20W CFL) × 0.736 kg/kWh (CEA v21.0)",
+      "default_quantity": 6.0
+    },
+    {
+      "category": "backup_power",
+      "activity_type": "diesel_generator",
+      "region": "india",
+      "unit": "hours",
+      "kg_co2e_per_unit": 6.7,
+      "source": "IPCC — 2.5L/hr diesel consumption, 2.68 kg CO2/L diesel",
+      "default_quantity": 2.0
+    },
+    {
+      "category": "backup_power",
+      "activity_type": "inverter_battery_charging",
+      "region": "india",
+      "unit": "charge_cycle",
+      "kg_co2e_per_unit": 0.736,
+      "source": "Derived: ~1 kWh per charge cycle × 0.736 kg/kWh (CEA v21.0)",
+      "default_quantity": 1.0
+    },
+    {
+      "category": "transport",
+      "activity_type": "walking",
+      "region": "india",
+      "unit": "km",
+      "kg_co2e_per_unit": 0.0,
+      "source": "Zero emission — logged for insight/streak tracking",
+      "default_quantity": 2.0
+    },
+    {
+      "category": "transport",
+      "activity_type": "cycling",
+      "region": "india",
+      "unit": "km",
+      "kg_co2e_per_unit": 0.0,
+      "source": "Zero emission — logged for insight/streak tracking",
+      "default_quantity": 5.0
+    },
+    {
+      "category": "transport",
+      "activity_type": "city_bus",
+      "region": "india",
+      "unit": "km",
+      "kg_co2e_per_unit": 0.089,
+      "source": "India GHG Program — public bus per passenger-km",
+      "default_quantity": 10.0
+    },
+    {
+      "category": "transport",
+      "activity_type": "metro",
+      "region": "india",
+      "unit": "km",
+      "kg_co2e_per_unit": 0.041,
+      "source": "Delhi Metro Rail Corporation sustainability report, per passenger-km",
+      "default_quantity": 15.0
+    },
+    {
+      "category": "transport",
+      "activity_type": "auto_rickshaw",
+      "region": "india",
+      "unit": "km",
+      "kg_co2e_per_unit": 0.06,
+      "source": "India GHG Program — CNG auto-rickshaw per passenger-km",
+      "default_quantity": 5.0
+    },
+    {
+      "category": "transport",
+      "activity_type": "two_wheeler_petrol",
+      "region": "india",
+      "unit": "km",
+      "kg_co2e_per_unit": 0.05,
+      "source": "India GHG Program — petrol scooter/motorcycle, ~40 km/L, 2.3 kg CO2/L",
+      "default_quantity": 12.0
+    },
+    {
+      "category": "transport",
+      "activity_type": "car_petrol",
+      "region": "india",
+      "unit": "km",
+      "kg_co2e_per_unit": 0.17,
+      "source": "India GHG Program — petrol car, ~14 km/L, 2.3 kg CO2/L",
+      "default_quantity": 20.0
+    },
+    {
+      "category": "transport",
+      "activity_type": "car_diesel",
+      "region": "india",
+      "unit": "km",
+      "kg_co2e_per_unit": 0.155,
+      "source": "India GHG Program — diesel car, ~17 km/L, 2.68 kg CO2/L",
+      "default_quantity": 20.0
+    },
+    {
+      "category": "transport",
+      "activity_type": "car_cng",
+      "region": "india",
+      "unit": "km",
+      "kg_co2e_per_unit": 0.13,
+      "source": "India GHG Program — CNG car, ~20 km/kg CNG, 2.75 kg CO2/kg",
+      "default_quantity": 20.0
+    },
+    {
+      "category": "transport",
+      "activity_type": "car_ev",
+      "region": "india",
+      "unit": "km",
+      "kg_co2e_per_unit": 0.11,
+      "source": "Derived: 0.15 kWh/km × 0.736 kg/kWh (CEA v21.0)",
+      "default_quantity": 20.0
+    },
+    {
+      "category": "transport",
+      "activity_type": "taxi_ridehail",
+      "region": "india",
+      "unit": "km",
+      "kg_co2e_per_unit": 0.19,
+      "source": "India GHG Program — taxi (single occupant, petrol car)",
+      "default_quantity": 10.0
+    },
+    {
+      "category": "transport",
+      "activity_type": "intercity_bus",
+      "region": "india",
+      "unit": "km",
+      "kg_co2e_per_unit": 0.03,
+      "source": "India GHG Program — intercity bus per passenger-km (higher occupancy)",
+      "default_quantity": 200.0
+    },
+    {
+      "category": "transport",
+      "activity_type": "train_ac_class",
+      "region": "india",
+      "unit": "km",
+      "kg_co2e_per_unit": 0.018,
+      "source": "Indian Railways sustainability report — AC class per passenger-km",
+      "default_quantity": 300.0
+    },
+    {
+      "category": "transport",
+      "activity_type": "train_non_ac",
+      "region": "india",
+      "unit": "km",
+      "kg_co2e_per_unit": 0.008,
+      "source": "Indian Railways sustainability report — non-AC class per passenger-km",
+      "default_quantity": 300.0
+    },
+    {
+      "category": "transport",
+      "activity_type": "domestic_flight",
+      "region": "india",
+      "unit": "km",
+      "kg_co2e_per_unit": 0.255,
+      "source": "DEFRA 2024 — domestic average, economy class, with radiative forcing",
+      "default_quantity": 1000.0
+    },
+    {
+      "category": "transport",
+      "activity_type": "international_flight",
+      "region": "india",
+      "unit": "km",
+      "kg_co2e_per_unit": 0.195,
+      "source": "DEFRA 2024 — long-haul average, economy class, with radiative forcing",
+      "default_quantity": 5000.0
+    },
+    {
+      "category": "food_diet",
+      "activity_type": "vegetarian_meal",
+      "region": "india",
+      "unit": "meal",
+      "kg_co2e_per_unit": 0.7,
+      "source": "Poore & Nemecek (2018) Science — Indian vegetarian diet estimate",
+      "default_quantity": 1.0
+    },
+    {
+      "category": "food_diet",
+      "activity_type": "non_veg_poultry",
+      "region": "india",
+      "unit": "meal",
+      "kg_co2e_per_unit": 1.8,
+      "source": "Poore & Nemecek (2018) — chicken-based meal estimate",
+      "default_quantity": 1.0
+    },
+    {
+      "category": "food_diet",
+      "activity_type": "non_veg_mutton",
+      "region": "india",
+      "unit": "meal",
+      "kg_co2e_per_unit": 7.0,
+      "source": "Poore & Nemecek (2018) — lamb/goat meal, high methane footprint",
+      "default_quantity": 1.0
+    },
+    {
+      "category": "food_diet",
+      "activity_type": "non_veg_fish",
+      "region": "india",
+      "unit": "meal",
+      "kg_co2e_per_unit": 1.4,
+      "source": "Poore & Nemecek (2018) — farmed fish meal estimate",
+      "default_quantity": 1.0
+    },
+    {
+      "category": "food_diet",
+      "activity_type": "dairy_consumption",
+      "region": "india",
+      "unit": "litre",
+      "kg_co2e_per_unit": 1.4,
+      "source": "FAO — Indian dairy sector, per litre of milk equivalent",
+      "default_quantity": 0.5
+    },
+    {
+      "category": "food_diet",
+      "activity_type": "eating_out",
+      "region": "india",
+      "unit": "meal",
+      "kg_co2e_per_unit": 2.5,
+      "source": "Estimated — restaurant meal (food + energy + waste overhead)",
+      "default_quantity": 1.0
+    },
+    {
+      "category": "food_diet",
+      "activity_type": "food_delivery_order",
+      "region": "india",
+      "unit": "order",
+      "kg_co2e_per_unit": 3.1,
+      "source": "Estimated — restaurant meal + packaging + delivery transport",
+      "default_quantity": 1.0
+    },
+    {
+      "category": "shopping",
+      "activity_type": "clothing_item",
+      "region": "india",
+      "unit": "item",
+      "kg_co2e_per_unit": 10.0,
+      "source": "DEFRA 2024 — average clothing item (cotton/polyester blend)",
+      "default_quantity": 1.0
+    },
+    {
+      "category": "shopping",
+      "activity_type": "electronics_purchase",
+      "region": "india",
+      "unit": "item",
+      "kg_co2e_per_unit": 50.0,
+      "source": "DEFRA 2024 — average consumer electronics (phone/laptop category)",
+      "default_quantity": 1.0
+    },
+    {
+      "category": "shopping",
+      "activity_type": "general_goods",
+      "region": "india",
+      "unit": "item",
+      "kg_co2e_per_unit": 5.0,
+      "source": "DEFRA 2024 — average consumer goods item",
+      "default_quantity": 1.0
+    },
+    {
+      "category": "waste",
+      "activity_type": "household_waste_landfill",
+      "region": "india",
+      "unit": "kg",
+      "kg_co2e_per_unit": 0.58,
+      "source": "IPCC — mixed municipal solid waste to landfill, India conditions",
+      "default_quantity": 2.0
+    },
+    {
+      "category": "waste",
+      "activity_type": "household_waste_composted",
+      "region": "india",
+      "unit": "kg",
+      "kg_co2e_per_unit": 0.1,
+      "source": "IPCC — composted/segregated organic waste",
+      "default_quantity": 1.0
+    },
+    {
+      "category": "occasional",
+      "activity_type": "festival_travel",
+      "region": "india",
+      "unit": "km",
+      "kg_co2e_per_unit": 0.17,
+      "source": "Derived — car petrol equivalent for mixed festival travel",
+      "default_quantity": 500.0
+    },
+    {
+      "category": "occasional",
+      "activity_type": "road_trip",
+      "region": "india",
+      "unit": "km",
+      "kg_co2e_per_unit": 0.17,
+      "source": "Derived — car petrol per km (typical road trip)",
+      "default_quantity": 300.0
+    },
+    {
+      "category": "occasional",
+      "activity_type": "event_attendance",
+      "region": "india",
+      "unit": "event",
+      "kg_co2e_per_unit": 15.0,
+      "source": "Estimated — large event (transport + energy + waste per attendee)",
+      "default_quantity": 1.0
+    }
+  ]
+}

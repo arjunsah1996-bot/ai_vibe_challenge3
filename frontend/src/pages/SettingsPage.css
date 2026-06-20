@@ -1,0 +1,322 @@
+/* ─── Settings Page Styles ──────────────────────────────────────────────── */
+
+.settings-page {
+  min-height: 100vh;
+  background: var(--bg-primary);
+  padding: var(--space-xl);
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ─── Header ───────────────────────────────────────────────────────── */
+.settings-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+  margin-bottom: var(--space-xl);
+}
+
+.settings-back {
+  font-size: 0.875rem;
+}
+
+.settings-title {
+  font-size: 2rem;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ─── Tabs ──────────────────────────────────────────────────────────── */
+.settings-tabs {
+  display: flex;
+  gap: var(--space-xs);
+  margin-bottom: var(--space-xl);
+  border-bottom: 1px solid var(--border-glass);
+  padding-bottom: var(--space-xs);
+}
+
+.settings-tab {
+  padding: var(--space-sm) var(--space-lg);
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  transition: all var(--transition-base);
+  border: 1px solid transparent;
+  border-bottom: none;
+  position: relative;
+}
+
+.settings-tab:hover {
+  color: var(--text-primary);
+  background: var(--bg-glass);
+}
+
+.settings-tab--active {
+  color: var(--color-emerald);
+  background: var(--bg-glass);
+  border-color: var(--border-glass);
+}
+
+.settings-tab--active::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--gradient-primary);
+}
+
+/* ─── Content ──────────────────────────────────────────────────────── */
+.settings-content {
+  animation: fadeIn 0.3s ease-out;
+}
+
+.settings-tab-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+.settings-card {
+  padding: var(--space-xl) !important;
+}
+
+.settings-card-title {
+  font-size: 1.25rem;
+  margin-bottom: var(--space-lg);
+  color: var(--text-primary);
+}
+
+.settings-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  max-width: 500px;
+}
+
+.settings-msg {
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-md);
+  font-size: 0.875rem;
+  background: var(--bg-glass);
+  border: 1px solid var(--border-glass);
+}
+
+.settings-loading {
+  text-align: center;
+  color: var(--text-muted);
+  padding: var(--space-2xl);
+}
+
+.form-hint {
+  font-size: 0.75rem;
+  color: var(--text-dim);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-md);
+}
+
+/* ─── Budget ───────────────────────────────────────────────────────── */
+.budget-status-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.budget-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: var(--space-md);
+  background: rgba(10, 46, 26, 0.3);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-glass);
+}
+
+.budget-stat-label {
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+
+.budget-stat-value {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.budget-progress-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.budget-progress-label {
+  text-align: right;
+}
+
+.budget-slider-labels {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: var(--space-xs);
+}
+
+/* ─── Activities ───────────────────────────────────────────────────── */
+.activities-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-lg);
+}
+
+.activities-filters {
+  display: flex;
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.activities-search {
+  flex: 1;
+}
+
+.activities-category-filter {
+  min-width: 200px;
+}
+
+.activities-table-wrap {
+  overflow-x: auto;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-glass);
+}
+
+.activities-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.activities-table th {
+  padding: var(--space-sm) var(--space-md);
+  text-align: left;
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  background: rgba(10, 46, 26, 0.4);
+  border-bottom: 1px solid var(--border-glass);
+  white-space: nowrap;
+}
+
+.activities-table td {
+  padding: var(--space-sm) var(--space-md);
+  border-bottom: 1px solid rgba(52, 211, 153, 0.06);
+  vertical-align: middle;
+}
+
+.activities-table tr:hover td {
+  background: rgba(52, 211, 153, 0.04);
+}
+
+.activities-table tr:last-child td {
+  border-bottom: none;
+}
+
+.activity-cat-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.activity-source {
+  max-width: 160px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.activity-actions {
+  display: flex;
+  gap: 2px;
+}
+
+.activity-confirm-delete {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.activities-empty {
+  text-align: center;
+  color: var(--text-muted);
+  padding: var(--space-2xl) !important;
+}
+
+.activities-count {
+  margin-top: var(--space-md);
+  text-align: right;
+}
+
+/* ─── Factor Modal ─────────────────────────────────────────────────── */
+.factor-modal {
+  max-width: 520px !important;
+}
+
+/* ─── Responsive ───────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .settings-page {
+    padding: var(--space-md);
+  }
+
+  .settings-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-sm);
+  }
+
+  .settings-title {
+    font-size: 1.5rem;
+  }
+
+  .settings-tabs {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .settings-tab {
+    padding: var(--space-sm) var(--space-md);
+    font-size: 0.8125rem;
+    white-space: nowrap;
+  }
+
+  .activities-filters {
+    flex-direction: column;
+  }
+
+  .activities-category-filter {
+    min-width: unset;
+  }
+
+  .budget-status-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}

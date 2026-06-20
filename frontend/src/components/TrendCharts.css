@@ -1,0 +1,37 @@
+/* ─── Trend Charts Styles ───────────────────────────────────────────── */
+
+.trend-charts {
+  margin-bottom: var(--space-xl);
+}
+
+.chart-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--space-lg);
+}
+
+@media (max-width: 900px) {
+  .chart-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+.chart-card {
+  padding: var(--space-lg);
+}
+
+.chart-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-md);
+}
+
+/* Recharts tooltip override */
+.recharts-default-tooltip {
+  background: rgba(10, 46, 26, 0.95) !important;
+  border: 1px solid rgba(52, 211, 153, 0.3) !important;
+  border-radius: 8px !important;
+}
