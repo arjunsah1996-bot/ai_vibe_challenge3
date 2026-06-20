@@ -14,7 +14,7 @@ import type {
   User,
 } from './types';
 
-const API_BASE = 'http://localhost:8000/api';
+const API_BASE = 'https://ai-vibe-challenge3.wasmer.app/';
 
 // ─── Token management ──────────────────────────────────────────────────
 function getToken(): string | null {
